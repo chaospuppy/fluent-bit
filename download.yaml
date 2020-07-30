@@ -1,0 +1,23 @@
+resources:
+  - url: "docker://docker.io/fluent/fluent-bit@sha256:ab074297652d3c0e8dc322e19af24b4effbdbca11af304be13b6c435d735d8ff"
+    tag: "fluent/fluent-bit:1.5.1"
+  - filename: texinfo.tar.gz
+    url: "https://ftp.gnu.org/gnu/texinfo/texinfo-6.7.tar.gz"
+    validation:
+      type: sha256
+      value: a52d05076b90032cb2523673c50e53185938746482cf3ca0213e9b4b50ac2d3e
+  - filename: bison.tar.gz
+    url: "http://ftp.gnu.org/gnu/bison/bison-3.5.4.tar.gz"
+    validation:
+      type: sha256
+      value: c0dd154dfaba63553a892d41dc400c7baa88cc06a1e2e27813fdd503715e4c28
+  - filename: flex.tar.gz
+    url: "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz"
+    validation:
+      type: sha256
+      value: e87aae032bf07c26f85ac0ed3250998c37621d95f8bd748b31f15b33c45ee995
+  - filename: fluent-bit.tar.gz
+    url: "https://github.com/fluent/fluent-bit/archive/v1.5.1.tar.gz"
+    validation:
+      type: sha256
+      value: d9dd4fe94116533cd23fc5d2e505408f687c1eb1b4c233b4f9413ff6b87d53f3

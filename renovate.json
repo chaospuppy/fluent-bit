@@ -1,0 +1,28 @@
+{
+  "assignees": ["@tim"],
+  "baseBranches": ["development"],
+  "packageRules": [
+    {
+      "packagePatterns": ["fluent-bit"],
+      "groupName": "fluent"
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": [
+        "version=\"(?<currentValue>.*?)\""
+      ],
+      "depNameTemplate": "fluent/fluent-bit",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["^Jenkinsfile$"],
+      "matchStrings": [
+        "version:\\s+\"(?<currentValue>.*?)\""
+      ],
+      "depNameTemplate": "fluent/fluent-bit",
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
